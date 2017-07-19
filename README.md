@@ -1,9 +1,9 @@
 # HuntAsteroids
 TODO for Instructors to Specify:
-[ ] Short writeup (100-250 words on challenge)
-[ ]link to many datasets (below probably enough, but add to as needed 
-[ ] some context on how to engage with those using python
-[ ] some examples of other projects solving the challenge on the web (if we choose to build on a NASA challenge this comes built in
+- [ ] Short writeup (100-250 words on challenge)
+- [ ] link to many datasets (below probably enough, but add to as needed 
+- [ ] some context on how to engage with those using python
+- [ ] some examples of other projects solving the challenge on the web (if we choose to build on a NASA challenge this comes built in
 
 Some challenge resources
 * https://2016.spaceappschallenge.org/challenges/solar-system/near-earth-objects-machine-learning
