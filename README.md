@@ -14,15 +14,17 @@ Google "point clouds" and data visualization to learn about clever ways to depic
 
 
 ## Data Resources
-*https://pythonhosted.org/OrbitalPy/
+* https://pythonhosted.org/OrbitalPy/
 Use this code as a starting point. You'll want to modify it so that it produces plots that look the way you want, and then you'll want to modify it so that it can read in the orbital elements of actual asteroids (see below)
 
-*http://www.minorplanetcenter.net/iau/MPCORB.html
+* http://www.minorplanetcenter.net/iau/MPCORB.html
 Each asteroid's path is described by six numbers, or orbital elements. These numbers are: eccentricity, semimajor axis, inclination, longitude of the ascending node, and argument of periapsis. If you know these six numbers, you know where the asteroid is going, and you can also plot it's orbit. The Minor Planet Center has orbital elements for all the known asteroids.
 
-*These orbital elements are in a special format, you can read about the format here:
+* These orbital elements are in a special format, you can read about the format here:
 http://www.minorplanetcenter.net/iau/info/MPOrbitFormat.html
 
+* https://github.com/astrofrog/mpl-scatter-density
+Here's a density map package; density maps are good ways to plot lots of points.
 
 ## More data resources
 Some challenge resources
