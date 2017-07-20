@@ -1,10 +1,16 @@
 # HuntAsteroids
-TODO for Instructors to Specify:
-- [ ] Short writeup (100-250 words on challenge)
-- [ ] link to many datasets (below probably enough, but add to as needed)
-- [ ] link to some context on how to engage with some subset of those using python
-- [ ] some examples of other projects solving the challenge on the web (if we choose to build on a NASA challenge this comes built in)
+There's over 700,000 discovered asteroids in our solar system. Because they are so small, and occupy a region so vast, it's often difficult to depict them visually. If asteroids are shown orbiting the Sun next to the planets, often the sizes of the asteroids have to be greatly exaggerated in order to be seen. This makes space seem more crowded then it actually is. A very popular asteroid depiction is by Scott Manley: https://www.youtube.com/watch?v=BKKg4lZ_o-Y
 
+Your challenge is to combine your knowledge of python with your creativity to depict the asteroids in our solar system. You can choose to try to show all the asteroids, or a small portion of them. Start by making a single plot (image) that shows this.
+
+ 
+## Tips:
+
+With 700,000 asteroids, these plots can take a while to make. Start small while you're figuring things out, with just a few asteroids, and add the rest in later.
+
+ 
+
+Google "point clouds" and data visualization to learn about clever ways to depict large numbers of points.
 Some challenge resources
 * https://2016.spaceappschallenge.org/challenges/solar-system/near-earth-objects-machine-learning
 * https://2013.spaceappschallenge.org/challenge/exploring-asteroids-planet-hopper-20
@@ -12,6 +18,17 @@ Some challenge resources
 * https://2013.spaceappschallenge.org/challenge/citizen-generated-database-near-earth-objects/
 
 ## Data Resources
+*https://pythonhosted.org/OrbitalPy/
+Use this code as a starting point. You'll want to modify it so that it produces plots that look the way you want, and then you'll want to modify it so that it can read in the orbital elements of actual asteroids (see below)
+
+*http://www.minorplanetcenter.net/iau/MPCORB.html
+Each asteroid's path is described by six numbers, or orbital elements. These numbers are: eccentricity, semimajor axis, inclination, longitude of the ascending node, and argument of periapsis. If you know these six numbers, you know where the asteroid is going. The Minor Planet Center has orbital elements for all the known asteroids.
+
+*These orbital elements are in a special format, you can read about the format here:
+http://www.minorplanetcenter.net/iau/info/MPOrbitFormat.html
+
+
+## More data resources
 * https://api.nasa.gov/  
 * https://data.nasa.gov/
 * https://code.nasa.gov/
