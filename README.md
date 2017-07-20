@@ -11,11 +11,7 @@ With 700,000 asteroids, these plots can take a while to make. Start small while 
  
 
 Google "point clouds" and data visualization to learn about clever ways to depict large numbers of points.
-Some challenge resources
-* https://2016.spaceappschallenge.org/challenges/solar-system/near-earth-objects-machine-learning
-* https://2013.spaceappschallenge.org/challenge/exploring-asteroids-planet-hopper-20
-* https://2013.spaceappschallenge.org/challenge/catch-a-meteor-tracker/
-* https://2013.spaceappschallenge.org/challenge/citizen-generated-database-near-earth-objects/
+
 
 ## Data Resources
 *https://pythonhosted.org/OrbitalPy/
@@ -29,6 +25,11 @@ http://www.minorplanetcenter.net/iau/info/MPOrbitFormat.html
 
 
 ## More data resources
+Some challenge resources
+* https://2016.spaceappschallenge.org/challenges/solar-system/near-earth-objects-machine-learning
+* https://2013.spaceappschallenge.org/challenge/exploring-asteroids-planet-hopper-20
+* https://2013.spaceappschallenge.org/challenge/catch-a-meteor-tracker/
+* https://2013.spaceappschallenge.org/challenge/citizen-generated-database-near-earth-objects/
 * https://api.nasa.gov/  
 * https://data.nasa.gov/
 * https://code.nasa.gov/
