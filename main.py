@@ -1,3 +1,7 @@
-import graphics
+import graphics2 as graphics
+import numpy as np
 
-graphics.plotAsteroids([1,2,3,4,5,6,7,8,9,10,2],[4,7,3,6,2,8,2,4,1,7,3])
+N = 10000000
+x = np.random.normal(4, 2, N)
+y = np.random.normal(3, 1, N)
+graphics.plotAsteroids(x,y)
