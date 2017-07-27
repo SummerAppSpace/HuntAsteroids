@@ -1,5 +1,6 @@
-import matplotlib
-matplotlib.use('Agg')
+#import matplotlib
+import matplotlib as mpl
+mpl.use('Agg')
 import numpy as np
 import matplotlib.pyplot as plt
 #import plotly.plotly as py
@@ -27,3 +28,4 @@ def plotAsteroids(x,y):
     ax.set_ylim(-5, 10)
 
     plt.savefig("imggraphics.png")
+    subprocess.call(["fbi","imggraphics.png"])
