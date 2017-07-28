@@ -32,7 +32,7 @@ help(KeplerianElements.with_period)
 
 albert_e = 0.2225693 
 albert_i = 10.82763
-albert_a = 178.81528
+albert_a = 178.81528+40
 a        = 218103219999.9997253
 #inclination, argument of perihiliam is in degrees
 #semi-major axis is in meteres converts from au
@@ -65,9 +65,14 @@ f = orbit.f
 pos = plotter._perifocal_coords(molniya, f)
 x = x+[pos[0]]
 y = y+[pos[1]]
+print(x)
+print(y)
 x = x+[plotter._perifocal_coords(molniya_a, f)[0]]
 y = y+[plotter._perifocal_coords(molniya_a, f)[1]]
+print(x)
+print(y)
+
 #print(plotter._perifocal_coords(molniya,orbit.f))
 #print(plotter._plot_position(molniya))
 
-graphics.plotAsteroids(pos[0],pos[1])
+graphics.plotAsteroids(x,y)
