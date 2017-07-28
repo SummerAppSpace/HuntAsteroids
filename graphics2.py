@@ -27,6 +27,7 @@ def plotAsteroids(x,y):
     ax = fig.add_subplot(1,1,1, projection='scatter_density')
 
     #a.plot(x,y,"o")
+    #ax.plot(input)
     ax.scatter_density(x,y)
     ax.set_xlim(-5, 10)
     ax.set_ylim(-5, 10)
