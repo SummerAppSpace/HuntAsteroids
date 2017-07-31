@@ -5,15 +5,13 @@ pip3.5 install --user poliastro
 # How to Use
 First you import all the modules needed for this project;
 
+```
 import numpy as np
-
 from astropy import units as u
-
 from poliastro.bodies import Earth, Sun
-
 from poliastro.twobody import Orbit
-
 from matplotlib import pylab as plt
+```
 
 Next you need the data for Mars at J2000 from JPL HORIZONS which is;
 
