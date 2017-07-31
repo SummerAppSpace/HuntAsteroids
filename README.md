@@ -36,13 +36,21 @@ mars = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
 Then redefine the elements;
 
 a = 1.0779 * u.AU
+
 ecc = 0.8268 * u.one
+
 inc = 22.852 * u.deg
+
 raan = 88.0822 * u.deg
+
 argp = 31.297 * u.deg
+
 nu = 346.34 * u.deg
+
 Now you define a new orbit;
+
 icarus = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
+
 Next plot icarus and Mars
 
 
