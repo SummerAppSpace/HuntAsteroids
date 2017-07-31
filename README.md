@@ -17,59 +17,49 @@ from matplotlib import pylab as plt
 
 Next you need the data for Mars at J2000 from JPL HORIZONS which is;
 
+```
 a = 1.523679 * u.AU,
-
 ecc = 0.093315 * u.one,
-
 inc = 1.85 * u.deg,
-
 raan = 49.562 * u.deg,
-
 argp = 286.537 * u.deg,
-
 nu = 23.33 * u.deg.
+```
 
 After you complete that, you have to define Mars:
 
+```
 mars = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
-
 #then plot
-
 from poliastro.plotting import OrbitPlotter
-
 op = OrbitPlotter()
-
 op.plot(mars, label="Mars")
+```
 
 Then redefine the elements;
 
+```
 a = 1.0779 * u.AU
-
 ecc = 0.8268 * u.one
-
 inc = 22.852 * u.deg
-
 raan = 88.0822 * u.deg
-
 argp = 31.297 * u.deg
-
 nu = 346.34 * u.deg
+```
 
 Now you define a new orbit;
 
-icarus = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
+`icarus = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)`
 
 Next plot icarus and Mars
 
+```
 op = OrbitPlotter()
-
 op.plot(mars, label="Mars")
-
 op.plot(icarus,label="Icarus")
-
 plt.show()
-
 plt.savefig('asteroids.png')
+```
 
 Your code should print out two different images.
 # HuntAsteroids Original Project Description
