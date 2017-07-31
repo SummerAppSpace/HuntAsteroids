@@ -1,5 +1,10 @@
 
 # Installation Instructions
+pip3.5 --user poliastro
+
+# How to Use
+First you import all the modules needed for this project;
+
 import numpy as np
 
 from astropy import units as u
@@ -10,12 +15,7 @@ from poliastro.twobody import Orbit
 
 from matplotlib import pylab as plt
 
-#then plot
-from poliastro.plotting import OrbitPlotter
-op = OrbitPlotter()
-op.plot(mars, label="Mars")
-# How to Use
-First you import all the modules needed for this project. Next you need the data for Mars at J2000 from JPL HORIZONS which is;
+Next you need the data for Mars at J2000 from JPL HORIZONS which is;
 
 a = 1.523679 * u.AU,
 
@@ -32,6 +32,14 @@ nu = 23.33 * u.deg.
 After you complete that, you have to define Mars:
 
 mars = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
+
+#then plot
+
+from poliastro.plotting import OrbitPlotter
+
+op = OrbitPlotter()
+
+op.plot(mars, label="Mars")
 
 Then redefine the elements;
 
@@ -63,7 +71,7 @@ plt.show()
 
 plt.savefig('asteroids.png')
 
-
+Your code should print out two different images.
 # HuntAsteroids Original Project Description
 There's over 700,000 discovered asteroids in our solar system. Because they are so small, and occupy a region so vast, it's often difficult to depict them visually. If asteroids are shown orbiting the Sun next to the planets, often the sizes of the asteroids have to be greatly exaggerated in order to be seen. This makes space seem more crowded then it actually is. A very popular asteroid depiction is by Scott Manley: https://www.youtube.com/watch?v=BKKg4lZ_o-Y
 
