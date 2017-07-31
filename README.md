@@ -53,6 +53,16 @@ icarus = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
 
 Next plot icarus and Mars
 
+op = OrbitPlotter()
+
+op.plot(mars, label="Mars")
+
+op.plot(icarus,label="Icarus")
+
+plt.show()
+
+plt.savefig('asteroids.png')
+
 
 # HuntAsteroids Original Project Description
 There's over 700,000 discovered asteroids in our solar system. Because they are so small, and occupy a region so vast, it's often difficult to depict them visually. If asteroids are shown orbiting the Sun next to the planets, often the sizes of the asteroids have to be greatly exaggerated in order to be seen. This makes space seem more crowded then it actually is. A very popular asteroid depiction is by Scott Manley: https://www.youtube.com/watch?v=BKKg4lZ_o-Y
