@@ -1,6 +1,6 @@
 
 # Installation Instructions
-pip3.5 install --user poliastro
+`pip3.5 install --user poliastro`
 
 # How to Use
 First you import all the modules needed for this project;
