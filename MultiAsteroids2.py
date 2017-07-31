@@ -8,9 +8,19 @@ from poliastro.twobody import Orbit
 f=open("roid_info.txt")
 read_lines=f.readlines()
 from matplotlib import pylab as plt
+import argparse
 
 #then plot
 from poliastro.plotting import OrbitPlotter
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--asteroids", "-n", help="changes the number of asteroids")
+args=parser.parse_args()
+print(type(args.asteroids))
+if not args.asteroids:
+    asteroids=75
+else:
+    asteroids=int(args.asteroids)
 
 tempo=datetime.datetime(2000,1,1,0,0,0)
 #help(Orbit.from_classical)
@@ -25,7 +35,7 @@ for frame in range(5):#60*60):
 
     roid_orbits = []
 
-    for i in range(75):
+    for i in range(asteroids):
         line = read_lines[i]
         # pull out the e, i, arg_p
         line_e = float(line[71:79]) * u.one
@@ -35,7 +45,7 @@ for frame in range(5):#60*60):
         line_name=line[167:194]
         line_raan= float(line[49:57]) * u.deg
         line_ma= float(line[27:35]) * u.deg
-        x = Orbit.from_classical(Sun, line_semax, line_e, line_inc, line_raan, line_pera, line_ma, astratempo)
+        x = Orbit.from_classical(Sun, line_semax, line_e, line_inc, line_raan, line_pera, line_ma, epoch=astratempo)
         roid_orbits.append(x)
 
 
