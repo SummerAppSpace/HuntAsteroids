@@ -61,14 +61,14 @@ x = []
 y = []
 
 plotter=plotting.Plotter2D()
-f = orbit.f
+f = molniya.f
 pos = plotter._perifocal_coords(molniya, f)
 x = x+[pos[0]]
 y = y+[pos[1]]
 print(x)
 print(y)
-x = x+[plotter._perifocal_coords(molniya_a, f)[0]]
-y = y+[plotter._perifocal_coords(molniya_a, f)[1]]
+x = x+[plotter._perifocal_coords(molniya_a, molniya_a.f)[0]]
+y = y+[plotter._perifocal_coords(molniya_a, molniya_a.f)[1]]
 print(x)
 print(y)
 
