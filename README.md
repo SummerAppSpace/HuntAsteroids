@@ -16,13 +16,21 @@ op = OrbitPlotter()
 op.plot(mars, label="Mars")
 # How to Use
 First you import all the modules needed for this project. Next you need the data for Mars at J2000 from JPL HORIZONS which is;
-a = 1.523679 * u.AU
-ecc = 0.093315 * u.one
-inc = 1.85 * u.deg
-raan = 49.562 * u.deg
-argp = 286.537 * u.deg
-nu = 23.33 * u.deg
-After that you commplete that you have to define Mars:
+
+a = 1.523679 * u.AU,
+
+ecc = 0.093315 * u.one,
+
+inc = 1.85 * u.deg,
+
+raan = 49.562 * u.deg,
+
+argp = 286.537 * u.deg,
+
+nu = 23.33 * u.deg.
+
+After you complete that, you have to define Mars:
+
 mars = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
 Then redefine the elements;
 a = 1.0779 * u.AU
