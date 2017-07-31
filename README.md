@@ -32,7 +32,9 @@ nu = 23.33 * u.deg.
 After you complete that, you have to define Mars:
 
 mars = Orbit.from_classical(Sun, a, ecc, inc, raan, argp, nu)
+
 Then redefine the elements;
+
 a = 1.0779 * u.AU
 ecc = 0.8268 * u.one
 inc = 22.852 * u.deg
