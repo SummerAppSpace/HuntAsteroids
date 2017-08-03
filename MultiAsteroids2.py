@@ -27,13 +27,13 @@ tempo=datetime.datetime(2000,1,1,0,0,0)
 
 offset=float(0)
 
-for frame in range(5):#60*60):
-    offset=offset+5
+for frame in range(60*60):
+    offset=offset+1
     astratempo = time.Time(tempo, scale='utc')#, value=J2000.000)
     print("Rendering frame "+str(frame)+" for "+str(astratempo)+"...")
     
     #plot Icaurs and Mars
-    op = OrbitPlotter(bgcolor=(0,0,0), linewidth=0.25, markersize=3, audivision=12)
+    op = OrbitPlotter(bgcolor=(0,0,0), linewidth=0.01, markersize=3, audivision=12)
 
     roid_orbits = []
 
@@ -46,9 +46,9 @@ for frame in range(5):#60*60):
         line_semax = float(line[93:103]) * u.AU
         line_name=line[167:194]
         line_raan= float(line[49:57]) * u.deg
-        line_ma= float(line[27:35])+offset * u.deg
+        line_ma= (float(line[27:35])+offset) * u.deg
         #x = Orbit.from_classical(Sun, line_semax, line_e, line_inc, line_raan, line_pera, line_ma, epoch=astratempo)
-        x = Orbit.from_classical(Sun, line_semax, line_e, line_inc, line_raan, line_pera, line_ma, astratempo)
+        x = Orbit.from_classical(Sun, line_semax, line_e, line_inc, line_raan, line_pera, line_ma)#, astratempo)
         roid_orbits.append(x)
 
 
